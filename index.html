@@ -3,69 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dreamy Travels</title>
+    <title>Wanderlust Adventures</title>
     <style>
         body {
-            background-color: #F3E5F5;
-            color: #4A4A4A;
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            text-align: center;
+            background-color: #f5f5f5;
+            color: #333;
         }
         header {
-            background-color: #FFCCBC;
-            padding: 20px;
-            font-size: 24px;
+            background: url('https://source.unsplash.com/1600x900/?travel,nature') no-repeat center center/cover;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            font-size: 2.5em;
             font-weight: bold;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
         }
         .container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            padding: 20px;
+            padding: 40px;
+            text-align: center;
         }
-        .card {
-            background-color: #C8E6C9;
-            border-radius: 12px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            margin: 15px;
-            padding: 15px;
-            width: 300px;
+        .destination {
+            display: inline-block;
+            width: 30%;
+            margin: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
-        .card img {
+        .destination img {
             width: 100%;
             height: 200px;
-            border-radius: 8px;
+            object-fit: cover;
         }
-        .card h2 {
-            font-size: 18px;
-            margin-top: 10px;
+        .destination p {
+            padding: 15px;
+            background: white;
+            margin: 0;
         }
-        .card p {
-            font-size: 14px;
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
         }
     </style>
 </head>
 <body>
-    <header>Dreamy Travels</header>
+    <header>Explore the World</header>
     <div class="container">
-        <div class="card">
-            <img src="https://source.unsplash.com/400x300/?santorini" alt="Santorini, Greece">
-            <h2>Santorini, Greece</h2>
-            <p>Whitewashed houses with stunning sea views.</p>
+        <h2>Top Destinations</h2>
+        <div class="destination">
+            <img src="https://source.unsplash.com/400x300/?paris" alt="Paris">
+            <p>Experience the charm of Paris.</p>
         </div>
-        <div class="card">
-            <img src="https://source.unsplash.com/400x300/?kyoto" alt="Kyoto, Japan">
-            <h2>Kyoto, Japan</h2>
-            <p>Ancient temples and breathtaking cherry blossoms.</p>
+        <div class="destination">
+            <img src="https://source.unsplash.com/400x300/?bali" alt="Bali">
+            <p>Relax on the beaches of Bali.</p>
         </div>
-        <div class="card">
-            <img src="https://source.unsplash.com/400x300/?bali" alt="Bali, Indonesia">
-            <h2>Bali, Indonesia</h2>
-            <p>Tropical paradise with lush rice terraces.</p>
+        <div class="destination">
+            <img src="https://source.unsplash.com/400x300/?tokyo" alt="Tokyo">
+            <p>Discover the vibrant life of Tokyo.</p>
         </div>
     </div>
+    <footer>
+        &copy; 2025 Wanderlust Adventures | Travel More, Worry Less
+    </footer>
 </body>
 </html>
